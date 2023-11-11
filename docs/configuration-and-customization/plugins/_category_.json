@@ -1,0 +1,8 @@
+{
+  "label": "Plugins",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "What they are, what they do, how to install them."
+  }
+}
