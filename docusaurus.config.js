@@ -44,51 +44,51 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/pwnagotchi-unofficial/community-wiki/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/pwnagotchi-unofficial/community-wiki/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/pwnagotchi-unofficial/community-wiki/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/pwnagotchi-unofficial/community-wiki/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
+      ],
     ],
-  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+  ({
       // Replace with your project's social card
-      image: 'https://avatars.githubusercontent.com/u/147095178',
-      navbar: {
-        title: 'Pwnagotchi Unofficial',
-        logo: {
-          alt: 'Pwnagotchi Unofficial Logo',
-          src: 'https://avatars.githubusercontent.com/u/147095178',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'documentationSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
-          //{to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/pwnagotchi-unofficial/website',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+    image: 'https://avatars.githubusercontent.com/u/147095178',
+    navbar: {
+      title: 'Pwnagotchi Unofficial',
+      logo: {
+        alt: 'Pwnagotchi Unofficial Logo',
+        src: 'https://avatars.githubusercontent.com/u/147095178',
       },
-      footer: {
-        style: 'dark',
-        links: [
+      items: [
+      {
+        type: 'docSidebar',
+        sidebarId: 'documentationSidebar',
+        position: 'left',
+        label: 'Documentation',
+      },
+          //{to: '/blog', label: 'Blog', position: 'left'},
+      {
+        href: 'https://github.com/pwnagotchi-unofficial/website',
+        label: 'GitHub',
+        position: 'right',
+      },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
           /*{
             title: 'Docs',
             items: [
@@ -98,23 +98,23 @@ const config = {
               },
             ],
           },*/
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/k5GNu5Wg',
-              },
-              {
-                label: 'Reddit',
-                href: 'https://reddit.com/r/pwnagotchi',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Pwnagotchi-Unofficial',
-              },
-            ],
-          },
+      {
+        title: 'Community',
+        items: [
+        {
+          label: 'Discord',
+          href: 'https://discord.gg/k5GNu5Wg',
+        },
+        {
+          label: 'Reddit',
+          href: 'https://reddit.com/r/pwnagotchi',
+        },
+        {
+          label: 'GitHub',
+          href: 'https://github.com/Pwnagotchi-Unofficial',
+        },
+        ],
+      },
           /*{
             title: 'More',
             items: [
@@ -128,14 +128,17 @@ const config = {
               },
             ],
           },*/
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Pwnagotchi Unofficial. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Pwnagotchi Unofficial. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  }),
+  themes: [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    ],
 };
 
 export default config;
