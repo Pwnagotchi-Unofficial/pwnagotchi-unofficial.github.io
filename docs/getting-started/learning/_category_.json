@@ -1,8 +1,0 @@
-{
-  "label": "Understanding a Pwnagotchi",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "This section if focused for newcomers. You can find internal and external resources to different mechanisms that Pwnagotchi utilizes in order to do what it does. You can learn more about 802.11 protocol, 4-way handshakes, little bit about programming languages, machine learning and much more!"
-  }
-}
