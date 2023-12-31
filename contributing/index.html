@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-contributing" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.1">
+<title data-rh="true">Contributing | Pwnagotchi Unofficial</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://avatars.githubusercontent.com/u/147095178"><meta data-rh="true" name="twitter:image" content="https://avatars.githubusercontent.com/u/147095178"><meta data-rh="true" property="og:url" content="https://pwnagotchi-unofficial.github.io/contributing"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Contributing | Pwnagotchi Unofficial"><meta data-rh="true" name="description" content="This article describes details about contributing to this Wiki, how to write, style guides, and some basic overview of Markdown language."><meta data-rh="true" property="og:description" content="This article describes details about contributing to this Wiki, how to write, style guides, and some basic overview of Markdown language."><link data-rh="true" rel="icon" href="https://avatars.githubusercontent.com/u/147095178"><link data-rh="true" rel="canonical" href="https://pwnagotchi-unofficial.github.io/contributing"><link data-rh="true" rel="alternate" href="https://pwnagotchi-unofficial.github.io/contributing" hreflang="en"><link data-rh="true" rel="alternate" href="https://pwnagotchi-unofficial.github.io/contributing" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Pwnagotchi Unofficial RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Pwnagotchi Unofficial Atom Feed"><link rel="stylesheet" href="/assets/css/styles.133000b9.css">
+<script src="/assets/js/runtime~main.be108aa1.js" defer="defer"></script>
+<script src="/assets/js/main.a60fa5f4.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="https://avatars.githubusercontent.com/u/147095178" alt="Pwnagotchi Unofficial Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="https://avatars.githubusercontent.com/u/147095178" alt="Pwnagotchi Unofficial Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Pwnagotchi Unofficial</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/">Documentation</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/pwnagotchi-unofficial/website" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z"><input placeholder="Search" aria-label="Search" class="navbar__search-input"><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/">Pwnagotchi Community Wiki - Welcome</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/category/getting-started">Getting Started</a><button aria-label="Expand sidebar category &#x27;Getting Started&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/category/configuration-and-customization">Configuration and customization</a><button aria-label="Expand sidebar category &#x27;Configuration and customization&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/category/3rd-party-images">3rd party images</a><button aria-label="Expand sidebar category &#x27;3rd party images&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/contributing">Contributing</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Contributing</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1 id="contributing">Contributing</h1>
+<p>This article describes details about contributing to this Wiki, how to write, style guides, and some basic overview of Markdown language.</p>
+<h2 id="basics-of-contributing">Basics of contributing</h2>
+<p>To contribute directly to this wiki, you should <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">fork the repository</a>. You can do that simply by visiting <a href="https://github.com/Pwnagotchi-Unofficial/pwnagotchi-unofficial.github.io">this wiki&#x27;s repo on GitHub</a>, and clicking the &quot;Fork&quot; button. Once you have forked the repo, you can <code>git clone</code> <strong>the forked repo</strong> to your local machine, like this:</p>
+<pre><code class="language-sh">git clone https://github.com/ApplePie420/pwnagotchi-unofficial.github.io.git
+</code></pre>
+<p>After that, do the initial set-up following <a href="https://github.com/Pwnagotchi-Unofficial/pwnagotchi-unofficial.github.io/blob/main/README.md#local-development">these instructions</a> (&quot;Local Development&quot; section). After you have your development server up and running, you can begin the work.</p>
+<h2 id="articles-and-categories">Articles and categories</h2>
+<p>The articles you will be working with are located inside the <code>/docs</code> folder in the repo. Every <strong>article</strong> is a <code>.md</code> (markdown) file. <strong>Categories</strong> are folders (named using lowercase kebab-case). See respective chapters for more information about these. Below is a tree-like overview of an example <code>/docs</code> folder structure:</p>
+<pre><code>docs
+├── category1
+│   ├── _category_.json
+│   └── article.md
+├── category2
+│   ├── _category_.json
+│   └── subcategory
+│       ├ ── _category_.json
+│       ├── article.md
+│       └── another-article.md
+├── article.md
+└── intro.md
+</code></pre>
+<h3 id="articles">Articles</h3>
+<p>An article is an individual <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> file, that is located somewhere in the underlying tree of the <code>/docs</code> folder. Article can be located in the <code>/docs</code> folder itself, or preferably, in appropriate <a href="#categories">category</a>. Before you create an article, please take some time to consider the proper (sub)category for your article. For editing markdown files, you can use whatever text editor you like, we recommend using <a href="https://code.visualstudio.com/">VS Code</a> (or it&#x27;s FOSS derivates), or dedicated markdown editors that have the ability to display the rendered text.</p>
+<h4 id="creating-new-article">Creating new article</h4>
+<p>When you have decided on an appropriate category for your article, simply create a new Markdown file in there. The naming should follow kebab-case convention, and should be descriptive of your article (ideally, if not excessively long, should be the title of the article). For example, if you are writing about extinction of dinosaurs, a filename might look like <code>The-extinction-of-dinosaurs-66-millions-years-ago.md</code> . Once you have created the file, you <strong>always have to</strong> provide a number 1 heading, which is your article&#x27;s name:</p>
+<pre><code class="language-markdown"># The extinction of dinosaurs, 66 million years ago
+</code></pre>
+<p>Your markdown file can also contain a <a href="#front-matter">front matter</a> section (that has to be on the top of the file, even before the number 1 heading), that defines some extra parameters (like custom URL, custom name, specific position in the sidebar, etc. For more details see <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter">Docusauru&#x27;s docs</a>):</p>
+<pre><code class="language-markdown">---
+sidebar_position: 3
+slug: /extinction-of-dinos
+title: Extinction of dinosaurs, 66 million years ago
+---
+</code></pre>
+<p>After you have your number one heading, and optionally front matter, you can start writing your article. See <a href="#styling-guide">styling guide</a> for inspiration on how to write well-formatted articles.</p>
+<p>You can then head over to <a href="#submitting-changes">submit your changes</a></p>
+<h4 id="editing-existing-article">Editing existing article</h4>
+<p>You can edit any file you like, with your favourite text editor. Editing might be necessary in case of outdated or untrue information, typo correction, or better wording.</p>
+<p>The <a href="#styling-guide">styling guide</a> and <a href="#submitting-changes">submitting process</a> is the same.</p>
+<h4 id="deleting-an-article">Deleting an article</h4>
+<p>Is just a matter of deleting the file from the folder. Please provide a good reason in the PR as to why you want this file to be deleted.</p>
+<h4 id="front-matter">Front matter</h4>
+<p>This is a part of a Markdown file, typically on the very top of the file, that contains metadata for the rendering engine, such as the title of the text, time created, author, etc. Compatible metadata for this wiki, alongside more information can be found <a href="https://docusaurus.io/docs/markdown-features#front-matter">here</a>.</p>
+<h3 id="categories">Categories</h3>
+<p>A category is basically an ordinary folder located somewhere in the folder tree of the <code>/docs</code> parent folder. This folder can be named arbitrary (however try to stick with descriptive names, as well as kebab-case naming convention), since their metadata is described in an extra file created in it, called <code>_category_.json</code>. This file <strong>has to be present</strong> in each category folder. You can find more information about what this file can contain <a href="https://docusaurus.io/docs/sidebar/autogenerated#category-item-metadata">here</a>. The bare minimum is this:</p>
+<pre><code class="language-json">{
+  &quot;label&quot;: &quot;Category Name&quot;,
+  &quot;position&quot;: positon_in_sidebar,
+  &quot;link&quot;: {
+    &quot;type&quot;: &quot;generated-index&quot;,
+    &quot;description&quot;: &quot;A description of your category&quot;
+  }
+}
+</code></pre>
+<h4 id="creating-new-category">Creating new category</h4>
+<p>Is as simple as creating new folder. You can (and are encouraged to) nest them, like so:</p>
+<pre><code>category
+├── subcategory1
+│   ├── subsubcategory1
+│   ├── subsubcategory2
+│   └── subsubcategory3
+└── subcategory2
+    ├── subsubcategory1
+    │   └── subsubsubcategory1
+    └── subsubcategory2
+</code></pre>
+<h4 id="deleting-a-category">Deleting a category</h4>
+<p>The same applies as when <a href="#deleting-an-article">removing an article</a> (e.g. provide a valid reason why it should be done). You also have take into consideration it&#x27;s articles, if it contains any, and where to move them after deletion.</p>
+<h3 id="submitting-changes">Submitting changes</h3>
+<p>Once you have your article written and in an appropriate category, with all images, links and formatting done, you can save the file and close the text editor. Next, you need to commit the changes to your repo. This can be done via various GUI Git clients, but also from terminal, using following:</p>
+<pre><code class="language-shell">git add .
+git commit -m &quot;[DOC] New article about extinction of dinosaurs&quot;
+git push
+</code></pre>
+<p>Once you have pushed the changes to your forked repo, you can head over to it in your browser, and <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">create a pull request</a>. A moderator (<em>and/or community</em>) will review your changes, optionally provides feedback on what needs to be fixed/edited, and accepts the pull request. That will include your changes into the main repo, which will automatically rebuild the webpage with your new content.</p>
+<h2 id="quick-markdown-guide">Quick markdown guide</h2>
+<h3 id="tools">Tools</h3>
+<p>Markdown is really simple to understand, and was designed to be easily readable even in its source code form. There are miriad of tools that will help you write markdown, like WYSIWYG editors (Word-like editors that compile to markdown), or editors where you write source code and you get live, rendered preview.</p>
+<p>You can use online tools such as <a href="https://stackedit.io/app#">StackEdit</a>, standalone tools like <a href="https://typora.io/">Typora</a> (that also features seamless live preview), or if you are using Visual Studio Code, you can press <a href="https://code.visualstudio.com/docs/languages/markdown">CTRL+K, V</a> (CTRL+K followed by V), which opens up a new pane with rendered markdown.</p>
+<h3 id="basics">Basics</h3>
+<p><strong>Bold text</strong> is written by enclosing part of the text with two asterisk: <code>**bold text**</code></p>
+<p><em>Italics</em> is written by enclosing part of the text in single underscore: <code>_italics text_</code></p>
+<p>Headings are denoted by a hash symbol <code>#</code>, and the number of them in row denotes which heading size it is:</p>
+<pre><code class="language-markdown"># Size 1 heading (main title)
+## Size 2 heading (main chapters)
+### Size 3 heading (subchapters)
+#### Size 4 heading (even more granular division)
+</code></pre>
+<blockquote>
+<p>Quotes are written by using <code>&gt;</code> symbol</p>
+</blockquote>
+<pre><code class="language-markdown">&gt; Your life changing quote
+</code></pre>
+<p>Ordered lists are prefixed with number, like so:</p>
+<pre><code class="language-markdown">1. Item 1
+2. Item 2
+3. Item 3
+</code></pre>
+<p>Unordered lists have a dash insted of number in front:</p>
+<pre><code class="language-markdown">- Item 
+- Another Item
+- Another Different Item
+</code></pre>
+<p>Link are made from two pairs of brackets, first square ones contains the link text, and second round brackets contains the link itself:</p>
+<pre><code class="language-markdown">[link to this wiki](https://pwnagotchi-unofficial.github.io/)
+</code></pre>
+<p>By prefixing link with <code>!</code>, you can insert an image:</p>
+<pre><code class="language-markdown">![alt text](image.jpg)
+</code></pre>
+<p>Please note that the path to the image is <em>relative</em> to the file&#x27;s location, i.e. the <code>image.jpg</code> would have to be in the same folder as the source file is.</p>
+<p>Code is written using backticks, singular backtics are used for <code>inline code</code>: <code>`code`</code>
+By putting three consecutive backticks on a separate new line, you can create a code block:</p>
+<pre><code class="language-markdown">```
+your
+multiline
+code
+```
+</code></pre>
+<p>You can also specify a language that the code is in, that way the syntax highlighter will work. Note that there are some caveats, for more info see <a href="https://docusaurus.io/docs/markdown-features/code-blocks#syntax-highlighting">here</a></p>
+<pre><code class="language-markdown">```c
+void main() {
+    return 0;
+}
+```
+</code></pre>
+<h3 id="cheatsheet">Cheatsheet</h3>
+<p>You can find a very useful cheatsheet with some more advanced tags <a href="https://www.markdownguide.org/cheat-sheet/">in this link</a></p>
+<h2 id="styling-guide">Styling guide</h2>
+<h3 id="divide-article-into-logical-chapters">Divide article into logical chapters</h3>
+<p>The chances that you are writing a complex article are pretty high, and noone wants to dig through wall of text just to find that one important part. It is important to divide your work into chapters, that follows some logic. A good example might be <a href="/getting-started/building/Building-your-first-budget-Pwnagotchi-using-RPi-0-W">this article</a>. Create a cohersive text, with a beginning, an end, and with the main text. By this logic, every article should have at least 3 number 2 headings (chapters).</p>
+<p>First chapter usually introduces us to the article or the problematics, gives us an idea about the following work, and maybe the reasoning for its creation.</p>
+<p>The content chapters should contain the main work - description of the problem, its dissection, solving, or a step-by-step documentation of it. It can (or rather shoud) be furthermore divided into more number 3 and 4 headings (chapters), or have multiple number 2 headings if needed. Remember, that less is sometimes more, and not to unnecessarily repeat yourself.</p>
+<p>The last chapter should close the entire article, provide a definitive solution, closing thoughts and ideas.</p>
+<p>Optionally, you can provide a chapter that lists sources if needed, however due to nature of having <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">hotlinks</a> in the text itself, this shouldn&#x27;t be necessary.</p>
+<h3 id="use-images-where-needed">Use images where needed</h3>
+<p>Don&#x27;t be afraid to put in images, even if you think they won&#x27;t be necessary. More often that not, it is better to have a simple image of something, rather than describing it with an entire paragraph. If you are going to provide images, try to make sure they are as high quality as possible. Screenshots should be high resolution, with clearly readable text, ideally containing only the part that interests us (e.g. crop you screenshots). Photographs should be also high resolution, with good lighting, not blurred. They can be edited in software like Gimp, Photoshop or others, for example to fix coloring, lighting, add text, arrows, etc.</p>
+<p>Images <strong>should not</strong> contain any sensitive data (IP addresses not from private spaces, physical addresses, names, e-mail addresses, phone numbers, etc.). Take extra care while going over your photos, and censor everything that might be sensitive using a black strip, heavy pixelation or blur effect, or physical object such as a piece of paper.</p>
+<h3 id="make-source-code-readable">Make source code readable</h3>
+<p>The beauty of Markdown is that it is well readable even in its source code form, and you can easily distinguish between different formatting options even if not rendered. Try to keep the source code readable and well written aswell. Divide paragraphs and headings by empty newlines. If you are going to put multiple commands or code snippets after each other, consider using code blocks rather than inline code tags.</p>
+<h2 id="getting-help">Getting help</h2>
+<p>The best thing to do when in doubt is to get help. You can always rely on the good old UTFG and RTFM. If you still need help, you can head over to our
+<a href="https://discord.com/channels/717817147853766687/1166355369661042771">community Discord</a>, the link will take you to a channel dedicated to Wiki, where you can further discuss, plan, and primarily get help from the others.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/Pwnagotchi-Unofficial/pwnagotchi-unofficial.github.io/tree/main/docs/contributing.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/3rd-party-images/List-main-fork"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">List main fork</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#basics-of-contributing" class="table-of-contents__link toc-highlight">Basics of contributing</a></li><li><a href="#articles-and-categories" class="table-of-contents__link toc-highlight">Articles and categories</a><ul><li><a href="#articles" class="table-of-contents__link toc-highlight">Articles</a><ul><li><a href="#creating-new-article" class="table-of-contents__link toc-highlight">Creating new article</a></li><li><a href="#editing-existing-article" class="table-of-contents__link toc-highlight">Editing existing article</a></li><li><a href="#deleting-an-article" class="table-of-contents__link toc-highlight">Deleting an article</a></li><li><a href="#front-matter" class="table-of-contents__link toc-highlight">Front matter</a></li></ul></li><li><a href="#categories" class="table-of-contents__link toc-highlight">Categories</a><ul><li><a href="#creating-new-category" class="table-of-contents__link toc-highlight">Creating new category</a></li><li><a href="#deleting-a-category" class="table-of-contents__link toc-highlight">Deleting a category</a></li></ul></li><li><a href="#submitting-changes" class="table-of-contents__link toc-highlight">Submitting changes</a></li></ul></li><li><a href="#quick-markdown-guide" class="table-of-contents__link toc-highlight">Quick markdown guide</a><ul><li><a href="#tools" class="table-of-contents__link toc-highlight">Tools</a></li><li><a href="#basics" class="table-of-contents__link toc-highlight">Basics</a></li><li><a href="#cheatsheet" class="table-of-contents__link toc-highlight">Cheatsheet</a></li></ul></li><li><a href="#styling-guide" class="table-of-contents__link toc-highlight">Styling guide</a><ul><li><a href="#divide-article-into-logical-chapters" class="table-of-contents__link toc-highlight">Divide article into logical chapters</a></li><li><a href="#use-images-where-needed" class="table-of-contents__link toc-highlight">Use images where needed</a></li><li><a href="#make-source-code-readable" class="table-of-contents__link toc-highlight">Make source code readable</a></li></ul></li><li><a href="#getting-help" class="table-of-contents__link toc-highlight">Getting help</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/k5GNu5Wg" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://reddit.com/r/pwnagotchi" target="_blank" rel="noopener noreferrer" class="footer__link-item">Reddit<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/Pwnagotchi-Unofficial" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Pwnagotchi Unofficial. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
