@@ -7,9 +7,9 @@ toc_max_heading_level: 6
 This article describes details about contributing to this Wiki, how to write, style guides, and some basic overview of Markdown language.
 
 ## Basics of contributing
-To contribute directly to this wiki, you should [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo). You can do that simply by visiting [this wiki's repo on GitHub](https://github.com/Pwnagotchi-Unofficial/pwnagotchi-unofficial.github.io), and clicking the "Fork" button. Once you have forked the repo, you can `git clone` **the forked repo** to your local machine, like this:
+To contribute directly to this wiki, you should [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo). You can do that simply by visiting [this wiki's repo on GitHub](https://github.com/Pwnagotchi-Unofficial/pwnagotchi-unofficial.github.io), and clicking the "Fork" button. Once you have forked the repo, you can `git clone` **the forked repo** to your local machine, like this (mind replacing `<YOUR-USERNAME>` in the URL):
 ```sh
-git clone https://github.com/ApplePie420/pwnagotchi-unofficial.github.io.git
+git clone https://github.com/<YOUR-USERNAME>/pwnagotchi-unofficial.github.io.git
 ```
 After that, do the initial set-up following [these instructions](https://github.com/Pwnagotchi-Unofficial/pwnagotchi-unofficial.github.io/blob/main/README.md#local-development) ("Local Development" section). After you have your development server up and running, you can begin the work.
 
